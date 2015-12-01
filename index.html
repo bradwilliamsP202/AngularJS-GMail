@@ -1,0 +1,45 @@
+<!--ng-app needed to let Angular know the scope it can operate in -->
+<html ng-app="EmailApp">
+    <head>
+    	<title>Angular Inbox</title>
+    	<style>
+	    [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+	      display: none !important;
+	    }
+	    </style>
+	    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+	    <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+
+      <header class="header" role="banner">
+	      <div class="header__text">
+	        <p>Angular Mail</p>
+	      </div>
+	    </header>
+
+	    <main class="main" role="main">
+
+	    	<!-- ng-view attribute will tell Angular where we wish to inject HTML based on the URL a user visits	-->
+	      <div ng-view class="flex"></div>
+
+	      
+	    </main>
+
+
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.22/angular.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.22/angular-route.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.22/angular-sanitize.min.js"></script>
+
+        <script src="js/app.js"></script>
+	    <script src="js/controllers/InboxCtrl.js"></script>
+	    <script src="js/controllers/EmailCtrl.js"></script>
+	    <script src="js/factories/InboxFactory.js"></script>
+	    <script src="js/factories/EmailFactory.js"></script>
+	    <script src="js/directives/InboxDrctv.js"></script>
+	    <script src="js/directives/EmailDrctv.js"></script>
+
+     
+    </body>
+</html>
